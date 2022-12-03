@@ -1,0 +1,87 @@
+.btn, .contact-submit{
+    background-color: $main_color;
+    border:0.125rem solid $accent_color;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 1;    
+    border-radius: $border-radius;
+    color:$accent_color;
+    padding: 1rem 1.25rem;
+    width: clamp(20rem, 100%, 28.125rem);
+    transition:  0.4s ease-in-out;
+    cursor: pointer;
+    overflow: hidden;
+    &:hover{
+        color: $font_color;
+        &::before{
+            transform: scaleX(1.1);
+        }
+    }
+    &::before{
+        content: '';
+        z-index: -1;
+        position: absolute;
+        top:0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: $accent_color;
+        transition: transform 0.3s ease-in-out;
+        transform: scaleX(0);
+        transform-origin: left;
+    }
+}
+.contact-submit{
+    width:100%
+}
+
+.link-wrapper{
+    display: flex;
+    align-items: center;
+    align-self: flex-end;
+    margin:.5rem;
+    
+    a{
+    
+        color: $font_color;
+        position: relative;
+        overflow: hidden; // ?
+        background: linear-gradient(to right, $accent_color, $accent_color 50%, $font_color 50%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 200% 100%;
+        background-position: 100%;
+        transition: background-position 275ms ease;
+        transition: 0.2s ease-in-out;
+        font-size: 0.938rem;
+        font-weight: 600;
+        
+        
+    }
+    &:hover{
+        a{
+            background-position: 0 100%;
+            transform:scale(1.1)
+        }
+        
+    }
+    &:focus{
+        a{
+            background-position: 0 100%;
+            transform:scale(1.1)
+        }
+    }
+    &:hover{
+        img{
+            transform:scale(1.3) rotateZ(360deg) translateX(.25rem);
+        }
+    }
+    img{
+        width: 1.875rem;
+        transition: 0.2s ease-in-out;
+    }
+}
+#external-icon{
+    height: 1.25rem;
+    margin:0 .5rem ;
+}

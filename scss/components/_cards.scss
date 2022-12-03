@@ -1,0 +1,112 @@
+.skill-card{
+    background-color:$gray_shade;
+    min-width:20rem;
+    max-width: 22.5rem;
+    padding:1.25rem 1.875rem;
+   
+    border-radius:$border-radius;
+    position:relative;
+    margin:1.25rem;
+    /*
+     TODO: Find a better way to get the same height
+     TODO: Grid on col flow ?
+    */
+    min-height:245px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    h3{
+        text-align:center;
+        font-size: 1.5rem;
+      }
+    p{
+        margin-top : 1.25rem;
+        color:$light_gray;
+      }
+
+    &:before,&:after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom:0;
+        border-radius: inherit;
+        border: 3px solid $accent_color;  
+    }
+    &:before{
+        clip-path:inset(0 calc(100% - 5rem) calc(100% - 2.5rem) 0);
+    }
+    &::after{
+        clip-path:inset( calc(100% - 2.5rem) 0 0 calc(100% - 5rem) );
+    }
+}
+
+
+.tool-card{
+    position: relative;
+    min-width: 20rem;
+    max-width: 22rem;
+    background-color: $gray_shade;
+    padding:1.25rem 1.875rem;
+    border-radius: $border-radius;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin:1.25rem;
+    h3{
+        color: $accent_color;
+    }
+    .tool{
+        position:absolute;
+        width:18.75rem;
+    }
+    p{
+        position: relative;
+    }
+
+}
+
+
+.portfolio-card{
+    display: flex;
+    flex-direction: column;
+    width:clamp(20rem,90vw,28.125rem);
+
+    border-radius: $border-radius;
+    overflow: hidden;
+    margin-bottom: 2.5rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   
+    .card-info{
+        display: flex;
+        flex-direction: column;
+        background-color: $gray_shade;
+        padding:1.25rem ;
+    }
+    +img{
+        position: relative;
+        width:100%;
+        align-self: center;
+        box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.24);
+    
+    
+    }
+}
+
+
+
+
+.app-presentation{
+    color: $light_gray;
+}
+.tech-used{
+    font-weight: 600;
+    display: flex;
+    justify-content: space-evenly;
+}
+.tech{
+    padding: .5rem;
+    background-color: $accent_color;
+    border-radius: 2rem;
+    font-size: 0.75rem;
+    margin:  1.875rem 0;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}

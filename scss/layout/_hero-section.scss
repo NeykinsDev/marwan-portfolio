@@ -1,0 +1,24 @@
+/************************************************************************/
+/******************************HERO SECTION******************************/
+/************************************************************************/
+#hero{
+    padding-top:  11.875rem;
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 4.375rem);
+ 
+}
+#hero-intro{
+    color: $accent_color;
+    letter-spacing: 1px;
+    font-size: 1.125rem;  
+}
+#hero-followup{
+    color:$light_gray;
+    font-size: clamp(1.625rem, 8vw, 2.75rem);
+}
+#hero-description{
+    margin: 4.375rem 0;
+    letter-spacing: 1px;
+    width:clamp(20rem,60vw,31.25rem);
+}

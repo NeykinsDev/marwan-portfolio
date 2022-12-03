@@ -1,0 +1,49 @@
+/************************************************************************/
+/***************************LOADING ANIMATION****************************/
+/************************************************************************/
+
+/*
+ * Loading animation made of 2 cube rotating, one of wich scaling down and up
+*/
+
+.loader-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    p{
+        font-size: 1.75rem;
+        margin: 3.125em 0;
+        text-align: center;
+    }
+}
+.loader{
+    animation: loader-rotation 1s infinite ease-in-out;
+
+    @keyframes loader-rotation {
+        0% {transform: rotate(0deg);}
+        100% {transform: rotate(90deg);}
+    }
+}
+.large-cube,.small-cube{
+    height: 4.375rem;
+    width: 4.375rem;
+    background-color: $accent_color;
+    border-radius:$border-radius;
+}
+.small-cube{
+    background-color: $main_color;
+    animation:small-box-animation 1s alternate infinite ease-in-out;
+    
+    @keyframes small-box-animation  {
+        0% {transform: scale(0.6);}
+        100% {transform: scale(0.8);}
+      }
+      
+}
+
+.loading{
+    opacity:0;
+    display:none;
+}

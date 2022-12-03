@@ -1,0 +1,296 @@
+/************************************************************************/
+/*****************************MEDIA QUERIES******************************/
+/************************************************************************/
+
+/*Tablet design*/
+@media only screen and (min-width: 48em) {
+    .menu-bg{
+        display:none;
+    }
+
+    header{
+        width:100%;
+        justify-content: space-evenly;
+    }
+    .burger{
+        display: none;
+    }
+    #desktop-nav{
+        display: flex;
+        font-size:1.25rem;
+    }
+    nav{
+        display: flex; //???
+        ul{
+            li{
+                margin:1.25rem;
+            }
+        }
+        
+    }
+
+    #hero{
+        justify-content: center;
+        .btn{
+            width: 12.5rem;
+        }
+    }
+    h1{
+        font-weight: 600;
+    }
+    /**/
+    #hero-description{
+        font-size: 1.25rem;  
+    }
+
+    #technology{
+        width: 46.25rem;
+      .about{
+          width: 31.25rem;
+          align-self: center;
+          +p{
+              width: 31.25rem;
+              align-self: center;
+          }
+          &::before{
+            
+            width: 2.5rem;
+            height:2.5rem;
+            top:-2.5rem;
+            left: -2.5rem;
+    
+        }
+        &::after{
+            width: 2.5rem;
+            height:2.5rem;
+            bottom:-2.5rem;
+            right: -2.5rem;
+        }
+      }
+      a{
+        width: auto;
+    }
+    }
+    .skill-wrapper{
+        display: grid;
+      
+        gap:1.25rem;
+        grid-template-areas: 
+         "HTML CSS"
+         "ES6 SASS";
+ 
+         #HTML{
+             grid-area: HTML;
+         
+         }
+         #CSS{
+             grid-area: CSS;
+         }
+         
+         #ES6{
+             grid-area: ES6;
+         }
+         
+         #SASS{
+             grid-area: SASS;
+         }
+         
+    }
+    .skill-card{
+        margin:0;
+    }
+
+    
+
+    
+    aside{
+        display: none;
+    }
+    #showcase{
+        width: clamp(47.5rem,80vw,75rem);        
+    }
+    .portfolio-card{
+        width:clamp(20rem,70vw ,40rem);
+        box-shadow: none;
+        align-items: center;
+        
+        img:first-child{
+            max-width: 40rem;
+            
+            transition:  0.2s ease-in-out;
+            &:hover{
+                filter: blur(0);
+            }
+        }
+       
+    }
+    /*
+    .odd-card{
+        
+        flex-direction: row-reverse;
+    }
+*/
+
+    .tech-used{
+        max-width: 25rem;
+        align-self: center;
+        gap:2rem;
+    }
+    #contact{
+        display: grid;
+        width: 46.875rem;
+        grid-template-areas: 
+        "title form "
+        "description form "
+        "socials form";
+        justify-items: center;
+
+        h2{
+            grid-area: title;
+            align-self: end;
+        }
+        p{
+            grid-area: description;
+            width:16.875rem;
+            text-align: justify;
+        }
+    }
+    .contact-form{
+        grid-area: form ;
+        button{
+            max-width: 46.875rem;
+        }
+    }
+    .socials{
+        grid-area: socials;
+    }
+}
+
+@media only screen and (min-width: 75em){
+
+   #technology{
+       width:68.75rem;
+       display: grid;
+       justify-items: center;
+       align-items: center;
+       grid-template-areas: 
+       "About About"
+       "Bio tech"
+       "Bio skillcard"
+       "tool tool"
+       "toolcard toolcard";
+        column-gap:clamp(3.75rem,5vw,5rem);
+
+       h2{
+           grid-area: About;
+           justify-self: start;
+       }
+       #grid-tech{
+           grid-area: tech;
+       }
+       .about{
+           width:21.875rem;
+    
+       
+       }
+       .skill-wrapper{
+           grid-area: skillcard;
+       }
+       .bio{
+        grid-area: Bio;
+            a{
+                width: auto;
+            }
+        }
+       
+       #grid-tool{
+           grid-area: tool;
+       }
+       #tool-card{
+           grid-area: toolcard;
+       }
+   }
+   .skill-wrapper{
+
+    gap:1.25rem;
+   }
+   #showcase{
+       width:clamp(75rem,80vw,150rem);
+       gap:3rem;
+   }
+
+
+   .odd-card{
+       flex-direction: row;
+   }
+   .even-card{
+       flex-direction: row-reverse;
+       .card-info{
+        transform: translate(0);
+       }
+       img:first-child{
+           transform: translate(-10vw);
+       }
+       
+   }
+
+   
+   .portfolio-card{
+       width:clamp(40rem,80%,100rem);
+       transform: translate(5vw);
+       img:first-child{
+        width:clamp(30rem,35vw,70rem);
+        border-radius: $border-radius;
+       
+   }
+
+   }
+   .card-info{
+       width:clamp(25rem,50%,40rem);
+       border-radius: $border-radius;
+       transform: translate(-10vw);
+
+   }
+   #contact{
+       width:clamp(46.875rem,90vw,100rem);
+        gap:1.25rem;
+       .contact-form{
+        width:clamp(21.875rem,50vw,31.25rem);
+           input, textarea{
+            width:clamp(21.875rem,50vw,31.25rem);
+           }
+           textarea{
+               height:18.75rem;
+           }
+       
+       }
+
+       p{
+           width:clamp(16.875rem,40vw,28.125rem);
+           font-size: 1.25rem;
+       }
+   }
+}
+
+@media only screen and (min-width: 112.5em){
+
+    #technology{
+        width: 100rem;
+        .about{
+            width: 28.125rem;
+        }
+        .bio{
+            font-size: 1.25rem;
+            width:28.125rem;
+     
+        
+        }
+    }
+    .skill-wrapper{
+
+        gap:2.5rem;
+       }
+   
+
+    
+}

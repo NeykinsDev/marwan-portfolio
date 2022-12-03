@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=µ, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;700&family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="scss/style.css">
+    <script src="app.js" defer></script>
+    <title>Marwan Bouserhir</title>
+
+    <link rel="shortcut icon" href="img/code-outline.svg" type="image/x-icon">
+
+</head>
+<body>
+    <div class="loader-wrapper">
+        <div class="loader">
+            <div class="large-cube">
+                <div class="small-cube"></div>
+            </div>
+        </div>
+        <p>Marwan is thinking..</p>
+    </div>
+    <div id="large-header" class="large-header">
+        <canvas id="demo-canvas"></canvas>    
+    </div>
+    <header id="header" class="loading">
+        <img src="img/code-outline.svg" alt="logo-svg">
+        <div class="burger" id="burger">
+            <span></span>
+        </div>
+        <nav id="desktop-nav">
+            <ul>
+                <li id="section-1-desktop">Home</li>
+                <li id="section-2-desktop">About</li>
+                <li id="section-3-desktop">My work</li>
+                <li id="section-4-desktop">Contact</li>
+            </ul>
+           
+        </nav>
+
+        <aside id="aside">
+            <nav class="mobile-nav" id="mobile-nav">
+                <ul>
+                    <li id="section-1">Home</li>
+                    <li id="section-2">About</li>
+                    <li id="section-3">My work</li>
+                    <li id="section-4">Contact</li>
+                </ul>
+               
+            </nav>
+        </aside>
+        <div class="menu-bg" id="menu-bg" ></div>
+
+        
+
+    </header>
+    <main class="loading" id="main">
+        <section id="hero">
+            <div id="hero-intro">
+                Hello friend, my name is
+            </div>
+            <h1>Marwan Bouserhir</h1>
+            <div id="hero-followup">
+                I love to build stuff for the internet. And coffee
+            </div>
+           
+            <p id="hero-description">
+                I'm a junior web developer that primarily focuses on the front-end.
+                I love minimal designs that bring ideas to life
+            </p>
+            <div class="btn" id="get-in-touch">
+                Get in touch
+            </div>
+        </section>
+        <section id="technology">
+            <h2>About<span class="accent"> me</span></h2>
+            
+            <div class="bio">
+                <p class="about">
+                    I'm Chris a junior Web developer based in Belgium. My main focus is the front-end, but my skills don't stop there. I have some experience in several programming languages such as C++ and Java. I'm open to all kinds of new technologies and always eager to learn in order to become a more polyvalent developer. I'm currently learning TailWind CSS and PHP. 
+                </p>
+                <a class="resume btn" href="resume.pdf" target="_blank">Check out my resume</a>
+            </div>
+            
+            <p class="description" id="grid-tech">
+                Those are the main <span class="accent"> tech</span> I'm using to build websites
+            </p>
+
+           <div class="skill-wrapper">
+                <div class="skill-card" id="HTML">
+                    <h3>
+                    <span class="accent">&lt;</span> HTML 5 <span class="accent">&gt;</span>
+                    </h3>
+                    <p>
+                    Every serious Websites need a strong back bone. I'm using HTML 5 to give proper and solid foundation to any website I build.
+                    </p>
+                </div>
+                <div class="skill-card" id="CSS">
+                    <h3>
+                    <span class="accent">{</span> CSS 3 <span class="accent">}</span>
+                    </h3>
+                    <p>
+                    The first impression given by your Website is his look. I use CSS 3 to create simple yet attractive designs that will make your website pop 
+                    </p>
+                </div>
+                <div class="skill-card" id="ES6">
+                    <h3>
+                    Javascript <span class="accent" >( );</span>
+                    </h3>
+                    <p>
+                    Every website can become more catchy with Javascript. I use Javascript to create immersive and rich experiences for the users
+                    </p>
+                </div>
+                <div class="skill-card" id="SASS">
+                    <h3>
+                    <span class="accent">_</span> SASS 
+                    </h3>
+                    <p>
+                    Writing maintainable code is important. Extending CSS with SASS allows me to write CSS more effectively while unlocking new features to get the most out of CSS
+                    </p>
+                </div>
+           </div>
+          
+            <p class="description" id="grid-tool">
+                Some <span class="accent"> tools</span> I'm familar with: 
+            </p>
+            <div class="tool-wrapper" id="tool-card">
+                <div class="tool-card">
+                    <img src="img/tool.svg" alt="tool-icon" class="tool">
+                    <h3>VSCode</h3>
+                    <p>
+                        Having a feature rich editor can come a long way when it comes to productivity. VScode features allow me to work faster and more efficiently
+                    </p>
+                </div>
+
+                <div class="tool-card">
+                    <img src="img/tool.svg" alt="tool-icon" class="tool">
+                    <h3>GitHub</h3>
+                    <p>
+                        GitHub is one of the most popular collaboration tool out there. GitHub provide must have tool for collaboration and versioning  to always be as efficient as possible
+                    </p>
+                </div>
+
+                <div class="tool-card">
+                    <img src="img/tool.svg" alt="tool-icon" class="tool">
+                    <h3>Figma</h3>
+                    <p>
+                        Jumping straight into coding is never a great way to approach website developement. I use Figma to get my idea in place and get feedback about any design idea
+                    </p>
+                </div>
+
+
+
+              
+               
+            </div>
+
+        </section>
+        <section id="showcase">
+            <h2>Some of my <span class="accent"> Projects</span></h2>
+            <div class="portfolio-card odd-card">
+                <img src="img/devfinder.png" alt="project-1">
+                
+                <div class="card-info ">
+                    <h3>GitHub devfinder</h3>
+                    <p class="app-presentation">
+                        Simple web app that allows the user to search through the github user base to gather general info about developers from github. Uses the github API to fetch the various data
+                    </p>
+                    <div class="link-wrapper">
+                        <a href="https://github.com/KruleDev/GitHubuserSearch" target="_blank">See on github</a>
+                        <img src="img/chevron-right-outline.svg" alt="arrow-link">
+                    </div>
+                    <h4>Tech used</h4>
+                    <div class="tech-used">
+                        <div class="tech">HTML 5</div>
+                        <div class="tech">CSS 3</div>
+                        <div class="tech">Javascript</div>
+                        <div class="tech">API</div>
+                    </div>
+    
+                    <div class="link-wrapper">
+                        <a href="https://git-hubuser-search.vercel.app/" target="_blank">See the website live</a>
+                        <img src="img/external-link-outline.svg" alt="arrow-link" id="external-icon">
+                    </div>
+                </div>
+               
+            </div>
+            <div class="portfolio-card even-card">
+                <img src="img/project-2.png" alt="project-1">
+                
+                <div class="card-info">
+                    <h3>OpenData Bruxelles</h3>
+                    <p class="app-presentation">
+                        Web app that fetches data from the OpenData API to provide the nearest public WiFi network in Bruxelles. The static maps are generated with Jawg maps
+                    </p>
+                    <div class="link-wrapper">
+                        <a href="https://github.com/KruleDev/OpenDataBruxelles" target="_blank">See on github</a>
+                        <img src="img/chevron-right-outline.svg" alt="arrow-link">
+                    </div>
+                    <h4>Tech used</h4>
+                    <div class="tech-used">
+                        <div class="tech">HTML 5</div>
+                        <div class="tech">CSS 3</div>
+                        <div class="tech">Javascript</div>
+                        <div class="tech">API</div>
+                    </div>
+    
+                    <div class="link-wrapper">
+                        <a href="https://open-data-bruxelles.vercel.app/" target="_blank">See the website live</a>
+                        <img src="img/external-link-outline.svg" alt="arrow-link" id="external-icon">
+                    </div>
+                </div>
+               
+            </div>
+
+            <div class="portfolio-card odd-card">
+                <img src="img/project-3.png" alt="project-1" >
+                
+                <div class="card-info ">
+                    <h3>Fiber Landing Page</h3>
+                    <p class="app-presentation">
+                       Classic Landing page design from Codewell. Build with mobile first in mind, it contains most of the primary component of a regular landing page. 
+                    </p>
+                    <div class="link-wrapper">
+                        <a href="https://github.com/KruleDev/FiberLandingPage" target="_blank">See on github</a>
+                        <img src="img/chevron-right-outline.svg" alt="arrow-link">
+                    </div>
+                    <h4>Tech used</h4>
+                    <div class="tech-used">
+                        <div class="tech">HTML 5</div>
+                        <div class="tech">CSS 3</div>
+                        <div class="tech">Mobile first</div>
+
+                    </div>
+    
+                    <div class="link-wrapper">
+                        <a href="https://fiber-landing-page-coral.vercel.app/" target="_blank">See the website live</a>
+                        <img src="img/external-link-outline.svg" alt="arrow-link" id="external-icon">
+                    </div>
+                </div>
+               
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Get in <span class="accent"> touch</span> !</h2>
+            <p>
+                Feel free to send a message if you want to chat about a project. Ill gladly answer to discuss any idea you have in mind
+               
+            </p>
+            <div class="socials">
+                <p>
+                    Or you can reach me on my <span class="accent">socials</span>:
+                </p>
+                <div class="socials-link">
+                    <a href="https://github.com/NeykinsDev" target="_blank">
+                        <img src="img/github-outline.svg" alt="github-social" >
+                    </a>
+                    <a href="https://twitter.com/Neykins_JS" target="_blank">
+                        <img src="img/twitter-outline.svg" alt="codepen-social">
+                    </a>
+                </div>
+               
+            </div>
+            <form action="https://formsubmit.co/marwanbouserhir@gmail.com" method="POST" class="contact-form">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Your email" required>
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://marwan-bouserhir-portfolio.vercel.app/thanks.html">
+                <textarea name="message" id="message-mail" cols="20" rows="10" placeholder="Your message"></textarea>
+                <button type="submit" class="contact-submit" id="contact-submit">Send your message</button>
+           </form>
+
+        </section>
+        
+    </main>
+    <footer class="loading" id="footer">
+        &copy; NeykinsDev 2022
+    </footer>
+</body>
+</html>

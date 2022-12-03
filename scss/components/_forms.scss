@@ -1,0 +1,37 @@
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $font_color;
+    caret-color: $font_color;
+    min-width: 20rem;
+    margin-top: 1.875rem;
+    input, textarea{
+        color: $font_color;  
+        font-size: 1rem;
+        background-color: $gray_shade;
+        width:clamp(20rem,80vw,25rem);
+        min-width:20rem;
+        padding: 0.8rem;
+        margin:.5rem 0 .5rem 0;
+        border: none;
+        border-radius: $border-radius;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        
+        &:focus{
+            outline: 2px solid $accent_color;
+        }
+        
+        &::placeholder {
+            color: $font_color;
+            opacity: 0.8;
+        }
+    }
+    textarea {
+        resize: none;
+        margin-bottom: 1rem;
+      }
+      button{
+          max-width: 25rem;
+      }
+}

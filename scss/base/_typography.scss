@@ -1,0 +1,27 @@
+/* 
+    * General typo rules only
+    * Component typography rules are in the respective component file
+*/
+
+body,input,textarea,button{
+    font-family: 'Montserrat', sans-serif;
+}
+h1,h2,h3,h4{
+    font-weight: 400;
+}
+h1{
+    font-size: clamp(2rem, 8vw, 4rem); 
+}
+h2{
+    font-size: clamp(2rem,8vw,3rem);
+}
+h3{
+    font-size: 1.25rem;
+}
+h4{
+    font-size: 1.125rem;
+}
+p{
+    line-height: $line_height;
+    text-align: justify;
+}

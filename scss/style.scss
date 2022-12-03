@@ -1,0 +1,31 @@
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+
+
+@import 'base/reset';
+@import 'base/typography';
+
+
+
+@import 'layout/general';
+@import 'layout/header';
+@import 'layout/hero-section';
+@import 'layout/about-section';
+@import 'layout/project-section';
+@import 'layout/contact-section';
+@import 'layout/footer';
+@import 'layout/thank-you';
+
+
+
+@import 'components/cards';
+@import 'components/links';
+@import 'components/loader';
+@import 'components/scroll';
+@import 'components/navigation';
+@import 'components/forms';
+@import 'components/burger';
+
+
+@import 'layout/media-queries';

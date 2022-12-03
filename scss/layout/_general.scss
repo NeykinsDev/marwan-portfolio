@@ -1,0 +1,33 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $main_color;
+    color:$font_color;
+}
+main{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+section{
+    width: clamp(20rem,80vw,43.75rem);
+    margin-bottom: 6.25rem;
+}
+
+
+.accent{
+    color:$accent_color;
+    
+  }
+
+  
+#large-header{
+    position:fixed;
+    height:100vh;
+    width:100vw;
+    z-index: -1;
+}

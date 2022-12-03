@@ -1,0 +1,33 @@
+/************************************************************************/
+/****************************CONTACT SECTION*****************************/
+/************************************************************************/
+#contact{
+    gap:2rem;
+    p{
+        margin-bottom: 1.875rem;
+        color: $font_color;
+    }
+}
+
+
+.contact-submit,.btn{
+    text-align: center;
+    font-size: 1rem;
+    position: relative;
+    letter-spacing: 1px;
+  
+}
+
+.socials-link{
+    display: flex;
+    justify-content: space-around;
+    a{
+        img{
+            width: 1.875rem;
+            transition:  .1s ease-in-out;
+            &:hover{
+                transform: scale(1.2);
+            }
+        }
+    }
+}
